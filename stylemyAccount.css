@@ -168,6 +168,7 @@
       background: #fff;
       margin: 1px 0px;
       padding:15px;
+
       
     }
     .float-left a{
@@ -181,6 +182,8 @@
       opacity: 0.7;
       font-size: 20px;
     }
+    
+   
 
     .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off,.fa-star,.fa-credit-card,.fa-bell,.fa-heart{
       color: #2ECAB6;
@@ -192,7 +195,12 @@
     }
     .sublist:hover{
       background: #F2FFFC;
+      color: #12c198;
     }
+    .status{
+      position: absolute !important;
+    }
+
 /*------------------------------left side end-------------------------------------------------*/
 /*-------------------------------right side---------------------------------------------------*/
     ul{
@@ -262,10 +270,15 @@
       margin: 5px;
     }
     .link{
+      display: inline-block;
       text-align: center;
-      background: #2ECAB6;
+      /*background: #2ECAB6;*/
       font-size: 18px;
       margin: 15px;
+    }
+    .btn-info{
+      background: #2ECAB6 !important;
+
     }
     /*--------------------------------right side end------------------------------------------------*/
     footer{
