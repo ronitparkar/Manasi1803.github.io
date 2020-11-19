@@ -90,6 +90,7 @@
       
       .card p{
         float: right;
+        margin-top: 0px !important;
         margin-bottom: 0px !important;
         font-size: 16px;
       }
@@ -108,6 +109,7 @@
       }
       hr{
         margin: 15px 5px;
+        margin-bottom: 0px !important;
       }
 /*-------------------------------------logout section----------------------------------------*/
 		.logout_section {
