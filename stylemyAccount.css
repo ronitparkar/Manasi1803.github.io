@@ -20,7 +20,7 @@
     .logo{
       padding-top: 0px;
     }
-    .fa-arrow-left{
+    /*.fa-arrow-left{
       color: #fff;
       padding-right: 15px;
       padding-top: 12px;
@@ -28,7 +28,7 @@
     .fa-arrow-left:hover{
       color: #01447e;
       
-    }
+    }*/
       .logo a{
       	text-decoration: none;
       	font-size: 20px;
