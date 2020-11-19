@@ -99,12 +99,15 @@
       .card-body{
         padding: 15px;
       }
+      .card-body h6{
+        padding-bottom: 10px;
+      }
       .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt {
          color: #2ECAB6; 
          margin-right: 10px;
       }
       hr{
-        margin: 18px 5px;
+        margin: 15px 5px;
       }
 /*-------------------------------------logout section----------------------------------------*/
 		.logout_section {
