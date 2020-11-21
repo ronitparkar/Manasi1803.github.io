@@ -291,14 +291,17 @@
                         <li><a href="#">Profile information</a></li>
                       </ul>
                     </div>
-                     <div class="personalinformation">
-                      <div class="info">
-                        <div style="margin-bottom: 18px;">
-                          <span style="margin-right: 25px;font-size: 25px;font-weight: bold;">Personal Information</span>
-                          <span style="font-size: 20px;"><a href="#">Edit</a></span>
-                        </div>
+
+                   <div class="personalinformation">
+                    <div class="info">
+                      <div style="margin-bottom: 18px;">
+                        <span style="margin-right: 25px;font-size: 25px;font-weight: bold;">Personal Information</span>
+                        <span><a href="#pers1" data-toggle="tab" style="color: #23b6ae; font-size: 20px;">Edit</a></span>
+                      </div>
+                    </div>
+                  
                         <form>
-                          <div style="margin-bottom: 20px;">
+                          <div style="margin-bottom: 20px;" style="display: inline-block !important;">
                             <div class="row">
                               <div class="col-sm-3">
                                 <input type="text" class="form-control" placeholder="First name">
@@ -306,9 +309,14 @@
                               <div class="col-sm-3">
                                 <input type="text" class="form-control" placeholder="Last name">
                               </div>
+                              <div class="tab-content">
+                                <div id="pers1" class="tab-pane fade">
+                                <button type="submit" class="btn btn-info mb-2" style="float: right; margin-top: 0px; ">SAVE</button>
+                              </div>
                             </div>
                           </div>
-                          <div style="margin-bottom: 20px;">
+
+                          <div style="margin: 20px;">
                             <h5 style="color:grey; margin-bottom: 20px;">Your Gender</h5>
                             <div class="form-check form-check-inline">
                               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -319,21 +327,83 @@
                               <label class="form-check-label" for="inlineRadio2" style="font-size: 18px">Female</label>
                             </div>
                           </div>
-                          <div>
-                            <div class="form-group col-md-5 form-inline">
-                              <label for="inputEmail4" style="font-size: 22px;font-weight: bold; margin-bottom: 20px;">Email Address</label>
-                              <a href="#" style="margin-left: 25px; font-size: 20px; margin-bottom: 20px;">Edit</a>
-                             
-                              <a href="#" style=" margin-left: 25px;font-size: 20px; margin-bottom: 20px;">Change Password</a>
-                              <div><input type="email" class="form-control" id="inputEmail4" placeholder="Email"></div>
+                          
+                          <div class="col-sm-6 form-inline">
+                            <label for="inputEmail4" style="font-size: 22px;font-weight: bold; margin-bottom: 25px;">Email Address</label>
+                            <a href="#email1" data-toggle="tab" style="margin-left: 25px; font-size: 20px; margin-bottom: 25px; color: #23b6ae;">Edit</a>
+                            <a href="#changep" style=" margin-left: 25px;font-size: 20px; margin-bottom: 25px; color: #23b6ae;">Change Password</a>
+                            
+                            <!--  
+
+
+
+<div class="modal fade" id="changep" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Change Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>-->
+                                              
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email Address">
+                            <div class="tab-content">
+                              <div id="email1" class="tab-pane fade">
+                               
+                                <button type="submit" class="btn btn-info mb-2" style="float: right; margin-left: 15px; margin-top: 8px; ">SAVE</button>
+                              
+                              </div>                              
+                                                    
                             </div>
-                            <div class="col-md-4 form-inline">
-                              <label for="phone" style="font-size: 22px;font-weight: bold; margin-bottom: 20px;">Contact number</label>
-                              <a href="#" style=" font-size: 20px;margin-left: 25px;margin-bottom: 20px;">Edit</a><br><br>
-                              <input type="tel" class="form-control"> </div>
                           </div>
+                      
+                       
+                            
+                        
+                            <div class="col-md-4 form-inline" >
+                              <label for="phone" style="font-size: 22px;font-weight: bold;">Contact number</label>
+                              <a href="#tel1" data-toggle="tab" style=" font-size: 20px;margin:20px;color: #23b6ae;">Edit</a><br><br>
+                              <input type="tel" class="form-control">
+                              <div class="tab-content">
+                                <div id="tel1" class="tab-pane fade">
+                                 
+                      
+                                    <button type="submit" class="btn btn-info mb-2" style="float: right; margin-left: 15px; margin-top: 8px;">SAVE</button>
+                                  </div>
+                                </div>        
+                               
+                              </div>
+                         
                         </form>
                       </div>
+
+                      
                     
                       <div class="faqs" style="margin-top: 20px;">
                         <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
@@ -349,6 +419,7 @@
                       </div>
                     </div>
                   </div>
+                   
                   
                   <!---------------------------------rigghhttside for Profile information section end------------------------------------------------- -->
 
@@ -396,6 +467,7 @@
                       </p>
                       </div>
                   </div>
+
                   <!---------------------------------rigghhttside for Verify yourself section end------------------------------------------------- -->
 
 
@@ -670,7 +742,7 @@
 <!-- Footer -->
  </section>    
      <!---------------------------------desktop view end--------------------------------->
-     
+
    <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
