@@ -160,9 +160,19 @@ header {
   font-size: 50px;
   color: #2ecab6;
 }
+.boxx {
+  background: #fff;
+  margin: 1px 0px;
+  padding: 0px;
+}
 .boxs {
   background: #fff;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
+}
+.boxss {
+  background: #fff;
+  margin: 1px 0px;
+  padding: 5px 0px;
 }
 .box {
   background: #fff;
@@ -192,10 +202,10 @@ header {
 .fa-bell,
 .fa-heart {
   color: #2ecab6;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .sublist {
-  padding: 5px 0px 5px 50px;
+  padding: 0px 0px 0px 50px;
   font-size: 18px;
 }
 .sublist:hover {
