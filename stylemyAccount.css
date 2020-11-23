@@ -76,6 +76,7 @@ header {
   .fa-user-circle {
     padding-top: 25px;
     font-size: 80px;
+
   }
 
   .card p {
@@ -123,6 +124,7 @@ header {
     width: 80%;
     height: 80%;
   }
+  
   /*-------------------------------------logout section----------------------------------------*/
   .logout_section {
     background-color: #444;
@@ -167,8 +169,11 @@ header {
   padding: 10px;
 }
 .icon .fa-user-circle {
-  font-size: 50px;
+  font-size: 38px;
   color: #2ecab6;
+  margin: 2px;
+ 
+
 }
 .boxx {
   background: #fff;
