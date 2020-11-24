@@ -228,6 +228,11 @@ header {
   color: #069784;
 }
 
+.lower a:hover{
+  text-decoration: underline !important;
+  color: green !important;
+}
+
 /*------------------------------left side end-------------------------------------------------*/
 /*-------------------------------right side---------------------------------------------------*/
 ul {
@@ -385,7 +390,10 @@ input[type="email"] {
   font-size: 16px;
   letter-spacing: 1px;
 }
-
+/*-------------------------My Coupons-----------------*/
+.coupon li {
+  margin-bottom: 15px;
+}
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;
