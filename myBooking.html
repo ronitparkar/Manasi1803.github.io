@@ -27,6 +27,10 @@
                 color: #2ECAB6;
                 margin-right: 10px;
             }
+            .rate a:hover{
+                text-decoration: underline;
+                color: green;
+            }
         </style>
     </head>
 
@@ -48,18 +52,17 @@
     <!--------------------------------------------------------------Header Section end-------------------------------------------------------------------->
     <!-----------------------------------My Account Section Start------------------->
     <section>
-        <div class="myaccountmovi">
-            <div class="row">
-                <div class="col-12" style="text-align:center">
-                    <i class="fas fa-user-circle fa-3x" aria-hidden="true"></i>
-                    <center style="display:inline-block">
-                        <h5>Hello Prateek</h5>
-                        9340939715
-                    </center>
-                </div>
-            </div>
-        </div>
+        
         <!------------------------My Account Section End--------------------------------->
+        <div class="mobileview">  
+      <div>
+      <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html">My Account</a></li>              
+          
+          <li><a href="#">My Bookings</a></li>
+          </ul>
+       </div>
         <div class="card">
             <div class="card-body">
                 <i class="fas fa-circle"></i>
@@ -125,15 +128,57 @@
                     <a type="button" class="btn btn-info" href="#pay" data-toggle="modal" data-target="#payrent" aria-pressed="false"
                             autocomplete="off">Pay
                             Rent</a>
-                    <div class="btn btn-info btn-xs" style="float:right"> Raise an issue</div>
-                    <div style="margin-top: 20px;"> <a href="#" align="center">
+                    <button type="button" class="btn btn-info"  aria-pressed="false" data-toggle="modal" data-target="#issue"
+                                  autocomplete="off" style="float: right;">Raise An Issue</button>
+                    <div class="modal fade" id="issue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Raise An Issue</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <textarea class="form-control" rows="1"></textarea>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                    <div class="rate" style="margin-top: 20px;"> <a href="#review" align="center" data-toggle="modal" data-target="#review">
                             <h6>RATE AND REVIEW</h6>
                         </a></div>
+                        <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Rate And Review Properties</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <textarea  class="form-control"rows="1"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                 </div>
             </div>
         </div>
 
     </section>
+</div>
     <div class="modal fade" id="payrent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
