@@ -222,6 +222,7 @@ header {
 .sublist {
   padding: 0px 0px 0px 50px;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 .sublist:hover {
   background: #f2fffc;

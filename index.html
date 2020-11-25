@@ -137,7 +137,7 @@
                            <i class="fa-3x fas fa-user-circle" aria-hidden="true"></i>
                         </div>
                         <div class="col-9">
-                            <span style="font-size: 17px;color: grey;">Hello,</span><br><span style="font-size: 17px;font-weight: bold;">Priyanka</span>
+                            <span style="font-size: 16px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Priyanka</span>
                         </div>
                     </div>
                     </div>
@@ -148,30 +148,49 @@
                       <a class="nav-link mybooking box" id="v-pills-bookings-tab" data-toggle="pill" href="#v-pills-bookings" role="tab"
                         aria-controls="v-pills-bookings" aria-selected="false"><i class="fa-1x fas fa-home " aria-hidden="true"></i><span class="list">My Bookings</span></a>
 
-                      <a class="nav-link disabled accountsetting boxx" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab"
-                        ><div class="box"><i class="fas fa-user"></i><span class="list">Account Setting</span></div></a>
-                      
-                        <a class="nav-link boxss" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                          aria-controls="v-pills-profile" aria-selected="false"><div class="sublist">Profile information</div></a>
-
-                          <a class="nav-link boxss" id="v-pills-verify-tab" data-toggle="pill" href="#v-pills-verify" role="tab"
-                            aria-controls="v-pills-verify" aria-selected="false"><div class="sublist">Verify yourself</div></a>
-
+                        <a class=" nav-link disabled box accountsetting " id="v-pills-account-tab" style="margin-bottom:0px;">
+                          <i class="fas fa-user"></i> <span class="list">Account Setting</span></a>
+                           <div style="background: white; height:  70px; ">
+                        
+                        <a id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                          aria-controls="v-pills-profile" aria-selected="false">
+                          <div class="sublist" >Profile information</div>
+                        </a>
+                        <a id="v-pills-verify-tab" data-toggle="pill" href="#v-pills-verify" role="tab"
+                            aria-controls="v-pills-verify" aria-selected="false">
+                          <div class="sublist">Verify yourself</div>
+                        </a>
+                      </div>
+                        <!--</div>-->
+                       
+                    
+                          
                       <a class="nav-link myappointment box" id="v-pills-appointments-tab" data-toggle="pill" href="#v-pills-appointments" role="tab"
                         aria-controls="v-pills-appointments" aria-selected="false"><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i><span class="list">My Appointments</span></a>
                      
+
+                        <a class="nav-link disabled  payments box"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span
+                            class="list" >Payments</span></a>
+                               <div style="background: white; height:  120px;">
+                        
+                        <a id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab"
+                          aria-controls="v-pills-transactions" aria-selected="false">
+                          <div class="sublist" style="margin-top: 10px;">All Transactions</div>
+                        </a>
+                        <a id="v-pills-gift-tab" data-toggle="pill" href="#v-pills-gift" role="tab"
+                            aria-controls="v-pills-gift" aria-selected="false">
+                          <div class="sublist"> Gift Cards</div>
+                        </a>
+                        <a id="v-pills-coupons-tab" data-toggle="pill" href="#v-pills-coupons" role="tab"
+                              aria-controls="v-pills-coupons" aria-selected="false">
+                          <div class="sublist" >My Coupons</div>
+                        </a>
+                      </div>
+                        
+                        <!-- </div>-->
+                     
                       
-                        <a class="nav-link disabled payments boxx" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        ><div class="box"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">Payments</span></div></a>
-                   
-                        <a class="nav-link boxss" id="v-pills-transactions-tab" data-toggle="pill" href="#v-pills-transactions" role="tab"
-                          aria-controls="v-pills-transactions" aria-selected="false"><div class="sublist">All Transactions</div></a>
-
-                          <a class="nav-link boxss" id="v-pills-gift-tab" data-toggle="pill" href="#v-pills-gift" role="tab"
-                            aria-controls="v-pills-gift" aria-selected="false"><div class="sublist">Gift Cards</div></a>
-
-                            <a class="nav-link boxss" id="v-pills-coupons-tab" data-toggle="pill" href="#v-pills-coupons" role="tab"
-                              aria-controls="v-pills-coupons" aria-selected="false"><div class="sublist">My Coupons</div></a>
+            
                              
                            
                         <a class="nav-link assistance box" id="v-pills-assistance-tab" data-toggle="pill" href="#v-pills-assistance" role="tab"
@@ -290,9 +309,9 @@
                               </ul>
                             </div>
                             <div class="dropdown-container" style="padding: 5px;">
-                        <label>Booking Status:</label>
+                        
                          <select name="" id="">
-                            <option value="">Booking Confirmed</option>
+                            <option value="">Booking Confirmed Ready To Move In</option>
                             <option value="">Booking Pending</option>  
                           </select>
                         </div>
@@ -385,7 +404,8 @@
                                 <option value="December">December</option>
                               </select>
                               <label for="start">Year:</label>
-                              <input type="year" id="bdaymonth" name="bdaymonth">
+                              <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
+                              </select>
 
                                 <a style="margin-left: 30px;" type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay
                                   Rent</a>
@@ -555,8 +575,12 @@
                       </ul>
                     </div>
                 <div class="verification">
-                  <div><p class="p1">Verify yourself  and  Get best offers Available</p></div>
-                       <div><h4>Verify your Identity</h4></div>
+                  <div>
+                    <h3>Verify yourself</h3><div style="margin: 0 80px;">&</div><p class="p1">Get best offers Available</p>
+                  </div>
+                  <div>
+                    <h4 class="p2">Verify your identity</h4>
+                  </div>
                        <div class="dropdown-container">
                         <label>Verification Status:</label>
                          <select name="" id="">
