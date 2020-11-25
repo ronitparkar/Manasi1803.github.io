@@ -46,7 +46,7 @@ header {
 .mobview {
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 770px) {
   .navbar {
     padding: 5px 25px;
   }
@@ -76,6 +76,7 @@ header {
   .fa-user-circle {
     padding-top: 25px;
     font-size: 80px;
+
   }
 
   .card p {
@@ -113,6 +114,17 @@ header {
     margin: 15px 5px;
     margin-bottom: 0px !important;
   }
+  .change{
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .changep{
+    align-items: center;
+    margin: 40px;
+    width: 80%;
+    height: 80%;
+  }
+  
   /*-------------------------------------logout section----------------------------------------*/
   .logout_section {
     background-color: #444;
@@ -157,8 +169,11 @@ header {
   padding: 10px;
 }
 .icon .fa-user-circle {
-  font-size: 50px;
+  font-size: 38px;
   color: #2ecab6;
+  margin: 2px;
+ 
+
 }
 .boxx {
   background: #fff;
@@ -206,11 +221,16 @@ header {
 }
 .sublist {
   padding: 0px 0px 0px 50px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .sublist:hover {
   background: #f2fffc;
   color: #069784;
+}
+
+.lower a:hover{
+  text-decoration: underline !important;
+  color: green !important;
 }
 
 /*------------------------------left side end-------------------------------------------------*/
@@ -279,10 +299,6 @@ ul.breadcrumb li a:hover {
   border: 1px soild black;
   margin: 5px;
 }
-.pp1 {
-  padding: 0 21px;
-  margin: 0 21px;
-}
 .link {
   display: inline-block;
   text-align: center;
@@ -330,6 +346,62 @@ ul.breadcrumb li a:hover {
   color: red;
   font-size: 20px;
 }
+/*--------------------------------verify yourself section-----------------------------*/
+.verification {
+  margin: 10px 0px;
+  padding: 20px 30px;
+}
+.verification div {
+  margin: 20px 0px;
+}
+.buttons .btn {
+  padding: 5px 40px;
+  color: white;
+  font-size: 16px;
+}
+.bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+.p3 {
+  color: grey;
+  margin-top: 0px;
+}
+.p1 {
+  color: red;
+  font-size: 18px;
+}
+/*--------------------------personal information ----------------------------------*/
+.personalinfo {
+  margin: 10px 0px;
+  padding: 20px 30px;
+}
+#myform input[type="text"],
+input[type="email"] {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+
+  box-sizing: border-box;
+  color: #2c3e50;
+  background-color: #eceff1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+/*.resend a{
+  color: black !important;
+}*/
+.resend a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+-------------------------My Coupons-----------------*/
+.coupon li {
+  margin-bottom: 15px;
+}
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;
@@ -337,4 +409,35 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/*--------------------------------Media Query for diffrent sizes------------------------------------------------*/
+@media (max-width: 1430px) {
+  .lower {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1098px) and (min-width: 770px) {
+  .carousel {
+    width: 200px;
+  }
+  .pp1 {
+    font-size: 12px;
+  }
+  .pp2 {
+    font-size: 15px;
+  }
+  .btn {
+    padding: 2px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 955px) and (min-width: 770px) {
+  .list {
+    font-size: 15px;
+  }
+  .sublist {
+    font-size: 12px;
+  }
 }
