@@ -41,9 +41,13 @@
           padding-top: 5px;
         }
 
-        .btn {
-          padding: 5px 20px;
-        }
+        .btn{
+        padding: 5px 20px;
+        color: white;
+      }
+      .breadcrumb ul li {
+        font-size: 12px !important;
+      }
       }
     </style>
   </head>
@@ -69,19 +73,15 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="verification">
-              <div>
-                <p class="p1">Get best offers Available</p>
-              </div>
-              <div>
-                <h4 class="p2">Verify your identity</h4>
-              </div>
-              <div>
-                <label>Verification Status:</label>
-                <select name="" id="">
-                  <option value="">Verification pending</option>
-                  <option value="">Verification Successful</option>
-                </select>
-              </div>
+              <div><p class="p1">Verify yourself and  Get best offers Available</p></div>
+                       <div><h4>Verify your Identity</h4></div>
+                       <div class="dropdown-container">
+                        <label>Verification Status:</label>
+                         <select name="" id="">
+                            <option value="">Verification pending</option>
+                            <option value="">Verification Successful</option>  
+                          </select>
+                        </div>
               <div class="button">
                 <button class="btn bg-warning b3">Select Files</button>
                 <button class="btn bg-success b3">Submit</button>

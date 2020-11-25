@@ -31,6 +31,9 @@
                 text-decoration: underline;
                 color: green;
             }
+            .breadcrumb ul li {
+        font-size: 12px !important;
+      }
         </style>
     </head>
 
@@ -119,11 +122,14 @@
                 <h6> Move In Scedule </h6>
                 <h6> Last Payment Done : ₹ 320 </h6>
                 <h6>Date and Time: 21/11/2020 21:30</h6>
-                <label>Booking Status:</label>
-                    <select name="books" id="books">
-                      <option value="">Booking Confirmed</option>
-                      <option value="">Booking Pending</option>
-                    </select>
+                <div class="dropdown-container" style="padding: 5px;">
+                        <label>Booking Status:</label>
+                         <select name="" id="">
+                            <option value="">Booking Confirmed</option>
+                            <option value="">Booking Pending</option>  
+                          </select>
+                        </div>
+                          </div>
                 <div style="padding:1em">
                     <a type="button" class="btn btn-info" href="#pay" data-toggle="modal" data-target="#payrent" aria-pressed="false"
                             autocomplete="off">Pay
