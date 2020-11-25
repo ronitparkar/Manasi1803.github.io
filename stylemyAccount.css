@@ -390,7 +390,15 @@ input[type="email"] {
   font-size: 16px;
   letter-spacing: 1px;
 }
-/*-------------------------My Coupons-----------------*/
+/*.resend a{
+  color: black !important;
+}*/
+.resend a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+-------------------------My Coupons-----------------*/
 .coupon li {
   margin-bottom: 15px;
 }

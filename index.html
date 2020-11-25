@@ -416,7 +416,45 @@
                   
                         <fieldset id="persional_information" class="">
                           <legend class="signup-legend">Personal information
-                            <span style="font-size:16px;margin-left: 20px; "><a href="#pers1" data-toggle="tab" style="color: #23b6ae; font-size:18px;">Edit</a></span></legend>
+                            <span style="font-size:16px;margin-left: 20px; "><a href="#edit"  style="color: #23b6ae; font-size:18px;" data-toggle="modal" data-target="#edit">Edit</a></span></legend>
+                            
+                            
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Edit Personal Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="editpersonal" style="background-color: white !important;">
+        <div class="row">
+                          <div class="form-group" style="margin-bottom: 20px; margin: 10px; display: inline-block !important; ">
+                            <lable class="">
+                              <input type="text" class="" placeholder="First name" style="background-color: white;">
+                            </lable>
+                            <lable class="">
+                              <input type="text" class="" placeholder="Last name" style="background-color: white;">
+                            </lable>
+                          </div>
+                        </div>
+                        <div class="form-group " style="margin-bottom: 20px;">
+                            <input type="email" name="email" id="email" placeholder="Email Id" style="background-color: white;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px; ">
+                            <input type="text" name="phno" id="phno" placeholder="Contact No." style="background-color: white;">
+                          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                           
                           <div class="row">
                           <div class="form-group" style="margin-bottom: 20px; display: inline-block !important;">
                             <lable class="">
@@ -425,11 +463,7 @@
                             <lable class="">
                               <input type="text" class="" placeholder="Last name">
                             </lable>
-                            <div class="tab-content">
-                                <div id="pers1" class="tab-pane fade">
-                                <button type="submit" class="btn btn-info mb-2" style="float: right; margin-top: 0px; ">SAVE</button>
-                                </div>
-                            </div>
+                            
                           </div>
                         </div>
 
@@ -445,20 +479,12 @@
                             </div>
                           </div>
                           <legend class="signup-legend" >Email Address
-                            <span style="font-size:16px;margin-left: 20px; "><a href="#email1" data-toggle="tab" style="color: #23b6ae; font-size: 18px;">Edit</a>
-                            </span>
+                       
                             <span style="font-size:16px;margin-left: 20px; "><a href="#changep" data-toggle="modal" data-target="#exampleModalCenter" style="color: #23b6ae; font-size:18px;">Change Password</a>
                             </span></legend>
-                          <div class="form-group form-inline" style="margin-bottom: 20px; display: inline-block !important;">
+                          <div class="form-group form-inline" style="margin-bottom: 20px; ">
                             <input type="email" name="email" id="email" placeholder="Email Id" />
-                            <div class="tab-content">
-                              <div id="email1" class="tab-pane fade">
-                               
-                                <button type="submit" class="btn btn-info mb-2" style=" float: right; margin-left: 15px; margin-top: 0; ">SAVE</button>
-                              
-                              </div>                              
-                                                    
-                            </div>
+                            
                           </div>
                           
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -469,7 +495,7 @@
                                     
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
-                                      <span aria-hidden="true">Resend OTP</span>
+                                      <span class="resend"aria-hidden="true"><a href="">Resend OTP</a></span>
                                     </button>
                                   </div>
                                   <div class="modal-body" >
@@ -488,18 +514,12 @@
                               </div>
                             </div>
                           <legend class="signup-legend">Contact Number
-                            <span style="font-size:16px;margin-left: 20px;"><a href="#tel1" data-toggle="tab" style="color: #23b6ae; font-size: 18px;">Edit</a><br><br>
+                          
                             </span>
                           </legend>
-                          <div class="form-group form-inline" style="margin-bottom: 20px; display: inline-block !important;">
+                          <div class="form-group form-inline" style="margin-bottom: 20px; ">
                             <input type="text" name="phno" id="phno" placeholder="Contact No.">
-                            <div class="tab-content">
-                                <div id="tel1" class="tab-pane fade">
-                                 
-                      
-                                    <button type="submit" class="btn btn-info mb-2" style="float: right; margin-left: 15px; margin-top: 8px;">SAVE</button>
-                                  </div>
-                                </div>
+                            
                           </div>
                           
                         </fieldset>
@@ -692,7 +712,7 @@
                     </div>
                   
                   <div class="giftCards">
-                  <div class="card w-75" >
+                  <div class="card w-75 border-info" >
                     <div class="card-body">
                       <h4>Gift Cards are not available.</h4>
                     </div>
@@ -715,10 +735,10 @@
                     </div>
                     <h4 style="text-align: center;">My Coupons</h4>
                     <div class="card-deck" style="margin: 20px;">
-  <div class="card ">
+  <div class="card border-info">
     
     <div class="card-body">
-      <div class="card-header">
+      <div class="card-header border-info">
     <h4>Coupon-1</h4>
   </div>
       
@@ -740,10 +760,10 @@
     
   </div>
 
-  <div class="card">
+  <div class="card border-info">
     
     <div class="card-body">
-      <div class="card-header">
+      <div class="card-header border-info">
     <h4>Coupon-2</h4>
   </div>
       
