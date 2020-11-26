@@ -15,7 +15,7 @@ header {
 .navbar {
   background: #2ecab6;
   padding: 0px 50px;
-  height: 8.5vh;
+  height: 9.2vh;
 }
 .logo {
   padding-top: 0px;
@@ -48,7 +48,7 @@ header {
 }
 @media (max-width: 770px) {
   .navbar {
-    padding: 5px 25px;
+    padding: 0px 25px;
   }
   .text {
     display: block;
@@ -76,9 +76,7 @@ header {
   .fa-user-circle {
     padding-top: 25px;
     font-size: 80px;
-
   }
-
   .card p {
     float: right;
     margin-top: 2px !important;
@@ -114,17 +112,6 @@ header {
     margin: 15px 5px;
     margin-bottom: 0px !important;
   }
-  .change{
-    margin-left: 15px;
-    margin-top: 0;
-  }
-  .changep{
-    align-items: center;
-    margin: 40px;
-    width: 80%;
-    height: 80%;
-  }
-  
   /*-------------------------------------logout section----------------------------------------*/
   .logout_section {
     background-color: #444;
@@ -160,6 +147,9 @@ header {
   .deskview {
     display: none;
   }
+  ul.breadcrumb li {
+    font-size: 14px !important;
+  }
 }
 /*---------------------------desktop view-------------------------*/
 /*--------------------------------left side--------------------------------------*/
@@ -169,11 +159,8 @@ header {
   padding: 10px;
 }
 .icon .fa-user-circle {
-  font-size: 38px;
+  font-size: 50px;
   color: #2ecab6;
-  margin: 2px;
- 
-
 }
 .boxx {
   background: #fff;
@@ -194,6 +181,11 @@ header {
   margin: 1px 0px;
   padding: 15px;
 }
+.abox {
+  padding: 15px;
+  background: #fff;
+  margin: 1px 0px 0px 0px;
+}
 .float-left a {
   text-decoration: none;
   color: black;
@@ -202,7 +194,7 @@ header {
   color: #069784;
 }
 .box .list {
-  opacity: 0.7;
+  opacity: 0.6;
   font-size: 20px;
 }
 
@@ -211,27 +203,26 @@ header {
 .box .fa-calendar-check,
 .box .fa-clock,
 .box .fa-home .box,
-.fa-power-off,
 .fa-star,
+.fa-power-off,
 .fa-credit-card,
 .fa-bell,
 .fa-heart {
   color: #2ecab6;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+.lower .fa-star {
+  color: green;
+  margin-right: 15px;
 }
 .sublist {
-  padding: 0px 0px 0px 50px;
+  padding: 5px 0px 5px 50px;
   font-size: 16px;
-  margin-bottom: 15px;
+  background: white;
 }
 .sublist:hover {
   background: #f2fffc;
   color: #069784;
-}
-
-.lower a:hover{
-  text-decoration: underline !important;
-  color: green !important;
 }
 
 /*------------------------------left side end-------------------------------------------------*/
@@ -320,10 +311,14 @@ ul.breadcrumb li a:hover {
   background-color: white !important;
   color: black !important;
 }
+.lower a:hover {
+  color: green;
+  text-decoration: underline;
+}
 /*--------------------------------verify yourself section-----------------------------*/
 .verification {
   margin: 10px 0px;
-  padding: 20px 30px;
+  padding: 20px 0px;
 }
 .verification div {
   margin: 20px 0px;
@@ -347,42 +342,28 @@ ul.breadcrumb li a:hover {
   color: red;
   font-size: 20px;
 }
-/*--------------------------------verify yourself section-----------------------------*/
-.verification {
-  margin: 10px 0px;
-  padding: 20px 30px;
+.b {
+  width: 160px;
 }
-.verification div {
-  margin: 20px 0px;
+.b3 {
+  width: 130px;
 }
-.buttons .btn {
-  padding: 5px 40px;
-  color: white;
-  font-size: 16px;
-}
-.bold {
-  font-weight: bold;
-  font-size: 16px;
-}
-.p3 {
-  color: grey;
-  margin-top: 0px;
-}
-.p1 {
-  color: red;
-  font-size: 18px;
-}
-.dropdown-container select {
-        /* for Firefox */
-        -moz-appearance: none;
-        /* for Safari, Chrome, Opera */
-        -webkit-appearance: none;
-      }
 
-      /* for IE10 */
-      .dropdown-container select::-ms-expand {
-        display: none;
-      }
+/* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+.dropdown-container select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+
+/* for IE10 */
+.dropdown-container select::-ms-expand {
+  display: none;
+}
+
 /*--------------------------personal information ----------------------------------*/
 .personalinfo {
   margin: 10px 0px;
@@ -402,18 +383,35 @@ input[type="email"] {
   font-size: 16px;
   letter-spacing: 1px;
 }
-/*.resend a{
-  color: black !important;
-}*/
-.resend a:hover{
-  color: green;
-  text-decoration: underline;
+
+.change {
+  margin-left: 15px;
+  margin-top: 0;
+}
+.changep {
+  align-items: center;
+  margin: 40px;
+  width: 80%;
+  height: 80%;
 }
 
--------------------------My Coupons-----------------*/
+/*----------------------------My Coupons-----------------*/
 .coupon li {
   margin-bottom: 15px;
 }
+
+/*----------------------------Transactions-----------------*/
+
+.redText {
+  background-color: red;
+}
+.greenText {
+  background-color: #0f0;
+}
+.yellowText {
+  background-color: yellow;
+}
+
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;

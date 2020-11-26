@@ -29,7 +29,7 @@
       href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
       rel="stylesheet"
     />
-    <link href="css/stylemyAccount.css" rel="stylesheet">
+    <link href="css/stylemyAccount.css" rel="stylesheet" />
     <script type="text/javascript" src="js/myaccount.js"></script>
 
     <style type="text/css">
@@ -41,13 +41,9 @@
           padding-top: 5px;
         }
 
-        .btn{
-        padding: 5px 20px;
-        color: white;
-      }
-      .breadcrumb ul li {
-        font-size: 12px !important;
-      }
+        .btn {
+          padding: 5px 20px;
+        }
       }
     </style>
   </head>
@@ -57,7 +53,10 @@
       <nav class="navbar fixed-top">
         <div class="logo">
           <a href="index.html"
-            ><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i
+            ><i
+              class="fas fa-arrow-left"
+              style="font-size: 24px; padding: 0 20px 10px 0"
+            ></i
           ></a>
           <a href="#" class="navbar-brand"
             >SHELTOWN.in
@@ -67,6 +66,14 @@
       </nav>
     </header>
     <!----------------------mmobile view---------------------------------------------------->
+    <div>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Account Setting</a></li>
+        <li><a href="#">Verify yourself</a></li>
+      </ul>
+    </div>
 
     <div class="mobileview" style="background: white">
       <div class="container-fluid">
@@ -74,18 +81,20 @@
           <div class="col-sm-12">
             <div class="verification">
               <div>
-                    <h3>Verify yourself</h3><div style="margin: 0 80px;">&</div><p class="p1">Get best offers Available</p>
-                  </div>
-                  <div>
-                    <h4 class="p2">Verify your identity</h4>
-                  </div>
-                       <div class="dropdown-container">
-                        <label>Verification Status:</label>
-                         <select name="" id="">
-                            <option value="">Verification pending</option>
-                            <option value="">Verification Successful</option>  
-                          </select>
-                        </div>
+                <h3>Verify yourself</h3>
+                <div style="margin: 0 80px">&</div>
+                <p class="p1">Get best offers Available</p>
+              </div>
+              <div>
+                <h4 class="p2">Verify your identity</h4>
+              </div>
+              <div class="dropdown-container">
+                <label>Verification Status:</label>
+                <select name="cars" id="cars">
+                  <option value="none">Verification pending</option>
+                  <option value="none">Verification Successful</option>
+                </select>
+              </div>
               <div class="button">
                 <button class="btn bg-warning b3">Select Files</button>
                 <button class="btn bg-success b3">Submit</button>
