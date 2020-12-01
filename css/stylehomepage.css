@@ -9,6 +9,8 @@ body {
 }
 .navbar-brand {
   font-size: 20px;
+  margin-top: 5px!important;
+  margin-bottom: -10px!important
 }
 .navbar-brand p {
   font-size: 14px;
@@ -54,11 +56,66 @@ body {
     position: relative;
     display: inline-block;
 }
-.fa-handshake,
-.fa-user-shield,
-.fa-hand-holding-heart {
-  color: #2ecab6;
+@media (max-width: 576px) {
+  .a2 p,.last p{  
+    font-size: 14px;
+  }
+  .premium{
+    text-align: left!important;
+  }
+  .a2{
+    padding-top: 10px!important;
+  }
+  input[type="search"]{
+    font-size: 10px;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important; 
+  }
+  .btn.btn-search{
+      font-size: 10px;
+      padding-top: 12px!important;
+   padding-bottom: 13px!important;
+  }
 }
+
+@media (max-width: 620px) and (min-width: 445px) {
+  .a1{
+    height: 270px;
+  }
+}
+@media (max-width: 445px)  {
+  .a1{
+    height: 290px;
+    padding-top: 70px;
+  }
+  .navbar-brand{
+    padding-left: 0!important;
+  }
+  .dropdown{
+    margin-left: -20px!important
+  }
+  .navbar-brand{
+  font-size: 18px;
+      }
+   .navbar-brand p{
+  font-size: 12px;  
+} 
+  
+}
+@media (max-width: 386px)  {
+  .a1{
+    height: 300px;
+    padding-top: 80px;
+  }
+  .img1 {
+       width: auto;
+       height: 3vh;
+    }
+   .dropdown{
+    margin-left: -25px!important
+  }
+}
+
 
 .center {
   display: block;
@@ -530,3 +587,8 @@ select {
 .lower{
   float: left;
 }
+@media only screen and (max-width: 475px){
+  .rside{
+    font-size: smaller;
+  }
+  }
