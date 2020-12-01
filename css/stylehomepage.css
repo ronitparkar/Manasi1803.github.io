@@ -93,6 +93,9 @@ body {
 .card {
   display: inline-block;
 }
+.login a:hover{
+  text-decoration: underline;
+}
 @media (min-width: 580px) {
   .mob {
     display: none;
@@ -477,6 +480,7 @@ ul.breadcrumb li a:hover {
 }
 
 .fa-heart{
+  color: red;
   float: right;
 }
 
